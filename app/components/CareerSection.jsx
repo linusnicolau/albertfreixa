@@ -47,16 +47,6 @@ export default function CareerSection() {
             stats: { matches: 28, minutes: 2082, goals: 3, rating: 7.40 }
         },
         {
-            id: 'lugo',
-            team: 'CD Lugo B',
-            league: '2ª RFEF (Trials)',
-            period: 'May 2022',
-            logoPlaceholder: 'LUG',
-            logo: 'lugo.png',
-            details: 'High-performance trials in subsidiary environment.',
-            stats: null
-        },
-        {
             id: 'palafrugell',
             team: 'F.C. Palafrugell',
             league: '2ª Catalana',
