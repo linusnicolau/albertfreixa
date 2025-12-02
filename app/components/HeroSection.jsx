@@ -1,4 +1,4 @@
-import { CheckIcon, InstagramIcon, scrollToSection } from '../utils/icons.js';
+import { CheckIcon, InstagramIcon, scrollToSection, ExternalLinkIcon } from '../utils/icons.js';
 
 const TacticalBoard = () => {
     const positions = [
@@ -32,8 +32,7 @@ const TacticalBoard = () => {
 export default function HeroSection() {
     return (
         <div id="hero" className="relative min-h-[100dvh] bg-[#0a0a0a] text-white overflow-hidden font-sans selection:bg-white selection:text-black flex flex-col">
-            {/* NOTE: Navbar is now in App.jsx or loaded separately, but typically Hero contains layout. 
-          Here we assume Navbar is rendered by App.jsx fixed at top. */}
+            {/* NOTE: Navbar is now in App.jsx or loaded separately */}
 
             {/* BACKGROUND TEXT */}
             <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none overflow-hidden z-0">
@@ -64,17 +63,21 @@ export default function HeroSection() {
                         <a href="https://instagram.com/freeixa" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-2 bg-white/5 rounded-full hover:bg-white/20 transition-all border border-white/10 text-white text-xs uppercase tracking-wider backdrop-blur-md">
                             <InstagramIcon /> <span className="hidden sm:inline">@freeixa</span>
                         </a>
+                        <a href="https://www.transfermarkt.es/albert-freixa/profil/spieler/1318898" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-2 bg-white/5 rounded-full hover:bg-white/20 transition-all border border-white/10 text-white text-xs uppercase tracking-wider backdrop-blur-md">
+                            <ExternalLinkIcon /> <span className="hidden sm:inline">Transfermarkt</span>
+                        </a>
                     </div>
                 </div>
 
                 {/* IMAGEN CENTRAL */}
                 <div className="lg:col-span-4 relative h-[50vh] lg:h-[100vh] flex items-end justify-center z-10 order-2 lg:order-2 -mx-6 lg:mx-0 pointer-events-none self-end">
                     <div className="absolute bottom-0 lg:top-[60%] left-1/2 -translate-x-1/2 lg:-translate-y-1/2 w-[80vw] h-[80vw] lg:w-[50vw] lg:h-[50vw] bg-blue-600/30 blur-[100px] rounded-full mix-blend-screen"></div>
-                    <img src="/albert-freixa-hero.png" alt="Albert Freixa" className="h-full w-auto object-contain object-bottom scale-x-[-1] scale-125 lg:scale-195 origin-bottom drop-shadow-[0_0_35px_rgba(59,130,246,0.5)] relative z-10" />
+                    <img src="/albert-freixa-hero.png" alt="Albert Freixa" className="h-full w-auto object-contain object-bottom scale-x-[-1] scale-100 lg:scale-195 origin-bottom drop-shadow-[0_0_35px_rgba(59,130,246,0.5)] relative z-10" />
                 </div>
 
                 {/* STATS DERECHA */}
-                <div className="lg:col-span-4 flex flex-col justify-center items-end z-30 order-3 w-full self-center mb-8 lg:mb-0 ml-12">
+                {/* RESPONSIVE FIX: 'items-center lg:items-end' para centrar en móvil y 'lg:ml-12' para evitar desplazamiento en móvil */}
+                <div className="lg:col-span-4 flex flex-col justify-center items-center lg:items-end z-30 order-3 w-full self-center mb-8 lg:mb-0 lg:ml-12">
                     <div className="w-full max-w-md bg-[#111]/70 backdrop-blur-xl border border-white/10 rounded-2xl p-5 shadow-2xl relative overflow-hidden group">
                         <div className="absolute -top-4 -right-2 text-[100px] font-black text-white/5 italic select-none z-0">6</div>
                         <div className="relative z-10">
@@ -92,9 +95,9 @@ export default function HeroSection() {
                                 </div>
                             </div>
                             <div className="mt-4 pt-3 border-t border-white/10 flex justify-between items-center">
-                                <div className="text-[10px] text-gray-500">Teams: <span className="text-gray-300">Palamós, Lugo B, Ordino...</span></div>
+                                <div className="text-[10px] text-gray-500">Teams: <span className="text-gray-300">Ordino F.C., C.D. Llosetense, Can Gibert U.E...</span></div>
                                 {/* Botón que lleva a la sección completa de stats */}
-                                <button onClick={(e) => scrollToSection(e, 'stats')} className="text-[10px] bg-white text-black px-3 py-1 rounded font-bold uppercase hover:bg-gray-200 transition-colors cursor-pointer">Full Profile</button>
+                                <button className="text-[10px] bg-white text-black px-3 py-1 rounded font-bold uppercase hover:bg-gray-200 transition-colors cursor-pointer">Full Profile</button>
                             </div>
                         </div>
                     </div>
