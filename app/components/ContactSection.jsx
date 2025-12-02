@@ -57,12 +57,12 @@ export default function ContactSection() {
                 <div className="container mx-auto px-6 text-center space-y-4">
                     {/* Logo */}
                     <div className="text-2xl font-black tracking-tighter uppercase italic text-white/20 select-none">
-                        AF<span className="text-blue-900/40">10</span>
+                        AF<span className="text-blue-900/40">6</span>
                     </div>
 
                     {/* Copyright */}
                     <p className="text-gray-600 text-xs uppercase tracking-widest">
-                        © 2025 Albert Freixa. Professional Footballer Profile.
+                        © 2025 Albert Freixa. Professional Footballer.
                     </p>
 
                     {/* Developer Credit */}
