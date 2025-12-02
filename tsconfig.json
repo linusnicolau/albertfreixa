@@ -40,7 +40,8 @@
     "app/components/MediaSection.jsx",
     "app/components/InterviewsSection.jsx",
     "app/components/ContactSection.jsx",
-    "app/page.jsx"
+    "app/page.jsx",
+    "app/layout.tsx"
   ],
   "exclude": [
     "node_modules"
