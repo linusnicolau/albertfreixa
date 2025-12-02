@@ -13,7 +13,7 @@ export default function ContactSection() {
                 {/* Header */}
                 <div className="text-center mb-16 md:mb-24 space-y-4">
                     <h2 className="text-blue-500 font-bold tracking-[0.25em] uppercase text-xs md:text-sm">Get In Touch</h2>
-                    <h3 className="text-4xl md:text-7xl font-black italic uppercase tracking-tighter">Contact <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-600">& Booking</span></h3>
+                    <h3 className="text-4xl md:text-7xl font-black italic uppercase tracking-tighter">Contact <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-600">& Inquiries</span></h3>
                     <p className="text-gray-400 max-w-lg mx-auto text-sm md:text-base leading-relaxed">Available for trials, transfers, and professional inquiries. Currently based in Spain, open to international opportunities.</p>
                 </div>
 
