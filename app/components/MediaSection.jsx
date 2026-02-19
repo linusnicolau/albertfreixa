@@ -32,6 +32,15 @@ const MediaSection = () => {
         {
             id: 1,
             platform: 'youtube',
+            title: '3RFEF Highlights',
+            subtitle: '2026 season highlights',
+            link: 'https://www.youtube.com/watch?v=qT2ALbhpgY0',
+            duration: '2:11',
+            thumbnail: 'tn3.jpg'
+        },
+        {
+            id: 2,
+            platform: 'youtube',
             title: 'Highlights 24/25',
             subtitle: '2025 season highlights',
             link: 'https://youtu.be/opLadYWNsF0?si=GnBRXMulYMs4EWuq',
@@ -40,7 +49,7 @@ const MediaSection = () => {
             thumbnail: 'tn1.jpg'
         },
         {
-            id: 2,
+            id: 3,
             platform: 'youtube',
             title: 'Highlights 23/24',
             subtitle: '2024 season highlights',
@@ -50,16 +59,6 @@ const MediaSection = () => {
             thumbnail: 'tn2.jpg'
         },
         // --- VÍDEOS PENDIENTES (Placeholders) ---
-        {
-            id: 3,
-            platform: 'instagram',
-            title: 'Highlights Coming Soon',
-            subtitle: 'More action on the way',
-            link: null,
-            duration: 'Soon',
-            isPlaceholder: true, // Marca para indicar que está pendiente
-            thumbnail: null
-        },
         {
             id: 4,
             platform: 'instagram',
