@@ -34,7 +34,7 @@ const MediaSection = () => {
             platform: 'youtube',
             title: '3RFEF Highlights',
             subtitle: '2026 season highlights',
-            link: 'https://www.youtube.com/watch?v=qT2ALbhpgY0',
+            link: 'https://youtu.be/Ipmc3M37KNc?is=T7qe2VGab0IWzhjS',
             duration: '2:11',
             thumbnail: 'tn3.jpg'
         },
