@@ -13,8 +13,8 @@ export default function CareerSection() {
             period: '2025-Present',
             logoPlaceholder: 'AR',
             logo: 'arandina.png',
-            details: 'Current season. Consolidating position in the defensive line. Last update: 2026-04-12',
-            stats: { matches: 25, minutes: 1790, goals: 3, rating: '-' }
+            details: 'Current season. Consolidating position in the defensive line. Last update: 2026-05-05',
+            stats: { matches: 26, minutes: 1880, goals: 3, rating: '-' }
         },
         {
             id: 'ordino',
