@@ -7,14 +7,24 @@ export default function CareerSection() {
 
     const careerData = [
         {
+            id: 'buru',
+            team: 'Buru SC',
+            league: 'Dhivehi Premier League',
+            period: '2026-Present',
+            logoPlaceholder: 'BS',
+            logo: 'buru.png',
+            details: 'Current season. Consolidating position in the defensive line in Maldives league.',
+            stats: { matches: 0, minutes: 0, goals: 0, rating: '-' }
+        },
+        {
             id: 'arandina',
             team: 'Arandina CF',
             league: '3ª RFEF',
-            period: '2025-Present',
+            period: '2025-2026',
             logoPlaceholder: 'AR',
             logo: 'arandina.png',
-            details: 'Current season. Consolidating position in the defensive line. Last update: 2026-05-13',
-            stats: { matches: 27, minutes: 1970, goals: 3, rating: '-' }
+            details: 'Full season in top-tier Spanish football.',
+            stats: { matches: 27, minutes: 1970, goals: 3, rating: 7.6 }
         },
         {
             id: 'ordino',
@@ -172,7 +182,7 @@ export default function CareerSection() {
                                                                         <span className="text-[9px] sm:text-[10px] text-gray-500 uppercase">Matches</span>
                                                                     </div>
                                                                     <div className="text-center p-2 bg-white/5 rounded border border-white/5">
-                                                                        <span className="block text-lg sm:text-xl font-bold text-white">{item.stats.minutes}'</span>
+                                                                        <span className="block text-lg sm:text-xl font-bold text-white">{item.stats.minutes}&apos;</span>
                                                                         <span className="text-[9px] sm:text-[10px] text-gray-500 uppercase">Minutes</span>
                                                                     </div>
                                                                     <div className="text-center p-2 bg-white/5 rounded border border-white/5">
